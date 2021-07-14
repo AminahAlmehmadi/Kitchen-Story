@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+     <script src="js/js_file.js"></script>
+</head>
+<body id="page4" onload="createTable()" onload="doShowAll()">
+	<!--==============================header=================================-->
+    <header>
+    	<div class="row-1">
+        	<div class="main">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Products</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="container_12">
+                <div class="grid_9">
+                    <h1>
+                        <a class="logo" href="home.html">K<strong>I</strong>T<strong>CH</strong>EN</a>
+                        <span>Story</span>
+                    </h1>
+                </div>
+                <div class="search-field">
+                    <br><br>   <input id="myInput"  name="search" placeholder=" Search...." type="text" />
+                      <input type="button" value="search" onclick="search()" /></p></div>    
+                 </div>
+            </div>
+        </div>    	 	
+    </header>
+<!-- content -->
+<div class="bg-top-shadow">
+    <div class="main">
+        <div class="box">
+            <div class="padding">
+                <div class="container_12">
+                    <div class="wrapper">
+                            <div class="wrapper p4">
+                                <article class="grid_4 alpha">
+                                    <div class="indent-left">
+                                        <figure class="frame2 p2"><img src="images/apple.jpg" width="100%" height="100%"/></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Apple: 3$ </strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Apple',3)" /></p>
+                                     </p>
+                                    </div>
+                                </article>
+                                <article class="grid_4">
+                                    <div class="indent3">
+                                        <figure class="frame2 p2"><img src="images/banana.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Banana: 2.75$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Banana',2.75)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4 omega">
+                                    <div class="indent-right">
+                                        <figure class="frame2 p2"><img src="images/orange.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Orange: 3.5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Orange',3.5)" /></p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="wrapper p4">
+                                <article class="grid_4 alpha">
+                                    <div class="indent-left">
+                                        <figure class="frame2 p2"><img src="images/bread.jpg" width="100%" height="100%"/></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Bread: 5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Bread',5)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4">
+                                    <div class="indent3">
+                                        <figure class="frame2 p2"><img src="images/butter.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Butter: 6.5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Butter',6.5)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4 omega">
+                                    <div class="indent-right">
+                                        <figure class="frame2 p2"><img src="images/milk.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Milk: 4.75$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Milk',4.75)" /></p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="wrapper p4">
+                                <article class="grid_4 alpha">
+                                    <div class="indent-left">
+                                        <figure class="frame2 p2"><img src="images/carrot.jpg" width="100%" height="100%"/></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Carrot: 3.5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Carrot',3.5)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4">
+                                    <div class="indent3">
+                                        <figure class="frame2 p2"><img src="images/cherry.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Cherry: 4$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Cherry',4)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4 omega">
+                                    <div class="indent-right">
+                                        <figure class="frame2 p2"><img src="images/grapes.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Grapes: 2.5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Grapes',2.5)" /></p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="wrapper p4">
+                                <article class="grid_4 alpha">
+                                    <div class="indent-left">
+                                        <figure class="frame2 p2"><img src="images/eggs.jpg" width="100%" height="100%"/></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Eggs: 5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Eggs',5)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4">
+                                    <div class="indent3">
+                                        <figure class="frame2 p2"><img src="images/cheese.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Cheese: 6.5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Cheese',6.5)" /></p>
+                                    </div>
+                                </article>
+                                <article class="grid_4 omega">
+                                    <div class="indent-right">
+                                        <figure class="frame2 p2"><img src="images/pear.jpg" width="100%" height="100%" /></figure>
+                                        <p class="color-4 prev-indent-bot"><strong>Pear: 4.5$</strong></p>
+                                            <p><input type="button" value="Buy" onclick="addRow('Pear',4.5)" /></p>      
+                                    </div>
+                                </article>
+                            </div>
+                            <div id="cont"></div><br>
+                            <input type="button" value="Calculate price" onclick="calculatePrice()" /><br><br>
+                           <h3><p class="color-4 prev-indent-bot"><strong>Total Price:</strong> </h3></p></h3> 
+                           <h2> <div id="total"></div></h2><br><br>
+                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                <!-- Identify your business so that you can collect the payments. -->
+                                <input type="hidden" name="business" value="#">
+                                <!-- Display the payment button. -->
+                                <input type="image" name="submit"
+                                  src="images/payment.png" width="30%" height="30%"
+                                  alt="Checkout">
+                                <img alt="" width="1" height="1"
+                                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+                              </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!--==============================footer=================================-->
+       <footer>
+    <div class="container_12">
+        <div class="wrapper">
+            <div class="grid_4">
+                <span class="phone-numb"><span>+966</span> 1234567</span>
+            </div>
+            <div class="grid_4">
+                 <a href="#"><img src="images/social_media.png" alt="" height="75%"  width="80%"/></a>
+            </div>
+        </div>
+     </footer>
+          	</div></div><table id=list style="visibility: hidden;"></table>
+</body>
+</html>

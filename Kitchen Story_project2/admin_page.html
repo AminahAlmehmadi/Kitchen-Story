@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+     <script src="js/js_file.js"></script>  
+</head>
+<body id="page5" onload="doShowAll()">
+	<!--==============================header=================================-->
+    <header>
+    	<div class="row-1">
+        	<div class="main">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Products</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="container_12">
+                <div class="grid_9">
+                    <h1>
+                        <a class="logo" href="home.html">K<strong>I</strong>T<strong>CH</strong>EN</a>
+                        <span>Story</span>
+                    </h1>
+                </div>
+                <div class="search-field">
+                    <br><br>   <input id="myInput"  name="search" placeholder=" Search...." type="text" />
+                      <input type="button" value="search" onclick="search()" /></p></div>    
+                 </div>
+            </div>
+        </div>    		
+    </header>
+<!-- content -->
+<div class="bg-top-shadow">
+    <div class="main">
+        <div class="box p3">
+            <div class="padding">
+                <div class="container_12">
+                    <div class="wrapper">
+                        <div class="grid_12">
+                            <div class="wrapper">
+                                 <div class="indent">
+                                <h3 class="p2">Change Password Form</h3>
+                                <form id="contact-form">                    
+                                    <fieldset>
+                                        <form name='change-PW'>
+                                           <label for="oldPW">Old Passwprd: </label>
+                                            <input type="password" id="oldPW"  name="old_password" placeholder=" Enter old password...."  /><br><br>
+                                            <label for="newPW">New Passwprd: </label>
+                                            <input type="password" id="newPW"  name="new_password" placeholder=" Enter new password...."  /><br><br><br>
+                                            <a class="button" id="changePW" type="submit" onclick="changePW()">Change Password</a>
+                                            <br>
+                                        </form>
+                                        </fieldset>
+                                    </form>
+                            </div>
+                            </div></div></div></div></div></div>
+                            <div class="box">
+                                <div class="padding">
+                                    <div class="container_12">
+                                        <div class="wrapper">
+                                            <div class="grid_12">
+                                                <div class="wrapper">
+                                                     <div class="indent">
+                                                        <h3 class="p2">Admin Products Control Form : </h3>
+                                                        <p>Insert Product name and quantity for your shopping product list. </p>
+                                                             <fieldset>
+                                                               <form name=ShoppingList>
+                                                                <label for="text">Product Name : </label>
+                                                                  <input type="text" name="product">
+                                                                  <label for="text">Product Price: </label>
+                                                                       <input type="text" name="data"><br><br>
+                                                                            <a class="button" id="add" onclick="SaveItem()">Add Product</a>
+                                                                            <a class="button" id="Update" type="submit" onclick="ModifyItem()">Update Product</a>
+                                                                            <a class="button" id="Delete" type="submit" onclick="RemoveItem()">Delete Product</a>
+                                                                            <a class="button" id="Show" type="submit" onclick="doShowAll()">Show Products</a>
+                                                                        <br><br>
+                                                                        <div id="items_table">
+                                                                            <h3>Products List</h3>
+                                                                            <table id=list></table>
+                                                                            <p><br>
+                                                                                <a class="button" id="Clear" onclick="ClearAll()">Clears</a>
+                                                                               
+                                                                                    <i>* Delete all items</i>
+                                                                            </p>
+                                                                            </div>
+                                                                        </form>
+                                                                    </fieldset>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div></div></div>
+     <!--==============================footer=================================-->
+     <footer>
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_4">
+                    <span class="phone-numb"><span>+966</span> 1234567</span>
+                </div>
+                <div class="grid_4">
+                     <a href="#"><img src="images/social_media.png" alt="" height="75%"  width="80%"/></a>
+                </div>
+            </div>
+         </footer>
+                  </div></div><table id=list style="visibility: hidden;"></table>
+</body>
+</html>
